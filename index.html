@@ -1,0 +1,80 @@
+<html>
+    <head>  
+        <title>
+            Feedback
+        </title>
+            <link rel="icon" type="image/x-icon" href="favicon.jpg">
+            <link rel="stylesheet" type="text/css" href="star.css">
+            <link rel="stylesheet" type="text/css" href="style1.css">
+        <style>
+        body
+{
+  background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/27507hd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+</style>
+       
+       <script>
+                function validate()
+                {
+                                    
+                     var emailID = document.myform.email.value;
+                     atpos = emailID.indexOf("@");
+                     dotpos = emailID.lastIndexOf(".");
+                     if (atpos < 1 || ( (dotpos - atpos) < 2 )) {
+                        alert("Please enter correct email ID")}
+
+                }
+                </script>
+    </head>
+    <body>
+        <div class="can1" style="--i:0;"></div>
+        <div class="can2" style="--i:1;"></div>
+        <div class="can3" style="--i:2;"></div>
+        <div class="can4" style="--i:3;"></div>
+        <div class="login">
+            <div class="login1">&emsp;<u>Feedback Form</u></div>
+            <div class="sub">&emsp;We would like your feedback to improve our page!</div>
+            <form name="myform" id="myform">
+            <div>
+        </br>
+        <div>
+            <input id="fname" type="text" placeholder="Enter your Name" size="50px" required autocomplete="off"/>
+            <label for="fname"></label>
+        </div>
+        
+        <div>
+            <input id="ema" type="email" name="email" placeholder="Enter your Email" size="50px" required autocomplete="off"/>
+            <label for="ema"></label>
+        </div>
+        <div class="sub1">&emsp;
+        How would you rate your experience using our website?</div></br>
+        <div class="container">
+            <div class="star-widget">
+                
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fa fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fa fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fa fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fa fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fa fa-star"></label>
+    </div>
+</div>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <textarea id="fdbck" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; resize: none;" type="message" class="textarea" name="message" rows="3" cols="50" placeholder="Your Feedback" required autocomplete="off"></textarea>
+        <button type="text" class="submit">Submit</button>
+    
+    </form>
+</div>  
+
+<script src="index.js" type="module"></script>
+</body>
+</html>
